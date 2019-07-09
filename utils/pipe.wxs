@@ -1,0 +1,14 @@
+function transformRole(role) {
+  switch(role) {
+    case 'marksman': return "射手"; break;
+    case 'tank': return "坦克"; break;
+    case 'support': return "辅助"; break;
+    case 'fighter': return "战士"; break;
+    case 'mage': return "法师"; break;
+    case 'assassin': return "刺客"; break;
+  }
+}
+
+module.exports = {
+  transformRole: transformRole
+}

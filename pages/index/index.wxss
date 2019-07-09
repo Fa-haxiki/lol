@@ -1,0 +1,39 @@
+page {
+
+}
+.index-container{
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lol-hero-item {
+  display: flex;
+  flex-direction: column;
+  width: 345rpx;
+  background: #eee;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.lol-hero-item .head {
+  width: 345rpx;
+  height: 345rpx;
+}
+
+.lol-hero-item .info {
+  font-size: 26rpx;
+  padding: 10rpx;
+  text-align: center;
+}
+
+.lol-hero-item .info view {
+  font-size: 32rpx;
+}
+
+.lol-hero-item .info text{
+  color: darkgoldenrod;
+  line-height: 1;
+}

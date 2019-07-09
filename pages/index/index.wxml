@@ -1,0 +1,11 @@
+<wxs src="../../utils/pipe.wxs" module="pipe"></wxs>
+
+<view class='index-container'>
+  <view class='lol-hero-item' wx:for="{{hero}}">
+    <image class='head' src='http://ossweb-img.qq.com/images/lol/img/champion/{{item.image[0]}}'></image>
+    <view class='info'>
+      <view>{{item.name}} {{item.title}}</view>
+      <text wx:for="{{item.roles}}">{{index == 0? '':'/'}}{{pipe.transformRole(item)}}</text>
+    </view>
+  </view>
+</view>
