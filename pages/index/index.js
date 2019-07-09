@@ -24,4 +24,12 @@ Page({
     })
   },
 
+  goToDetail(e) {
+    var that = this;
+    var id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '/pages/heroDetail/heroDetail?id=' + id,
+    })
+  }
+
 })

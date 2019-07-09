@@ -1,7 +1,7 @@
 <wxs src="../../utils/pipe.wxs" module="pipe"></wxs>
 
 <view class='index-container'>
-  <view class='lol-hero-item' wx:for="{{hero}}">
+  <view class='lol-hero-item' wx:for="{{hero}}" data-id='{{item.heroId}}' bindtap='goToDetail'>
     <image class='head' src='http://ossweb-img.qq.com/images/lol/img/champion/{{item.image[0]}}'></image>
     <view class='info'>
       <view>{{item.name}} {{item.title}}</view>
