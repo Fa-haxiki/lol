@@ -55,7 +55,7 @@
 					"id": 0,
 					"name": "详情",
 					"pathName": "pages/heroDetail/heroDetail",
-					"query": "id=3",
+					"query": "id=1",
 					"scene": null
 				}
 			]

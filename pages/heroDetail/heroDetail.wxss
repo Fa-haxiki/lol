@@ -146,3 +146,18 @@ page {
   color: #312f2f;
   margin-top: 10rpx;
 }
+
+.swiper-count {
+  position: absolute;
+  top: 320rpx;
+  font-size: 26rpx;
+  font-weight: bolder;
+  color: #ba9a6c;
+  text-align: center;
+  line-height: 40rpx;
+  right: 10rpx;
+  height: 40rpx;
+  width: 80rpx;
+  border-radius: 40rpx;
+  border: 4rpx solid #ba9a6c;
+}

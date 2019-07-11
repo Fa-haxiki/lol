@@ -1,11 +1,14 @@
 <!--pages/heroDetail/heroDetail.wxml-->
 <wxs src="../../utils/pipe.wxs" module="pipe"></wxs>
 <!-- indicator-dots indicator-color="#ffffff" indicator-active-color='#ba9a6c' -->
-<swiper class='swiper' autoplay>
+<swiper class='swiper' autoplay circular bindchange="change">
   <swiper-item wx:for="{{heroBackImg}}" wx:key>
     <image src='{{item.mainImg}}' class='back-img' mode='widthFix'></image>
   </swiper-item>
 </swiper>
+<view class='swiper-count'>
+  {{curSwiper}}/{{heroBackImg.length}}
+</view>
 <view class='hero-detail'>
   <view>{{heroTitle}}</view>
   <view class='role'>

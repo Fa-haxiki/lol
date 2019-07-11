@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    curSwiper: 1,
     curIndex: 0
   },
 
@@ -161,6 +162,12 @@ Page({
     var that = this;
     that.setData({
       curIndex: index
+    })
+  },
+
+  change(e) {
+    this.setData({
+      curSwiper: e.detail.current + 1
     })
   }
 })
