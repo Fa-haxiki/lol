@@ -12,15 +12,15 @@ page {
 .lol-hero-item {
   display: flex;
   flex-direction: column;
-  width: 345rpx;
+  width: 223.3rpx;
   background: #eee;
   margin-bottom: 20rpx;
   position: relative;
 }
 
 .lol-hero-item .head {
-  width: 345rpx;
-  height: 345rpx;
+  width: 223rpx;
+  height: 223rpx;
 }
 
 .lol-hero-item .info {
@@ -29,11 +29,17 @@ page {
   text-align: center;
 }
 
-.lol-hero-item .info view {
-  font-size: 32rpx;
+.lol-hero-item .info text{
+  color: #ba9a6c;
+  line-height: 1;
 }
 
-.lol-hero-item .info text{
-  color: darkgoldenrod;
-  line-height: 1;
+.name {
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.name .top {
+  font-weight: bolder;
 }

@@ -1,2 +1,75 @@
 <!--pages/heroDetail/heroDetail.wxml-->
-<text>pages/heroDetail/heroDetail.wxml</text>
+<wxs src="../../utils/pipe.wxs" module="pipe"></wxs>
+<!-- indicator-dots indicator-color="#ffffff" indicator-active-color='#ba9a6c' -->
+<swiper class='swiper' autoplay>
+  <swiper-item wx:for="{{heroBackImg}}" wx:key>
+    <image src='{{item.mainImg}}' class='back-img' mode='widthFix'></image>
+  </swiper-item>
+</swiper>
+<view class='hero-detail'>
+  <view>{{heroTitle}}</view>
+  <view class='role'>
+    <text wx:for="{{heroRole}}">{{index == 0? '':'/'}}{{pipe.transformRole(item)}}</text>
+  </view>
+  <view class='info'>
+    <view class='info-item' wx:for="{{heroInfo}}" wx:key>
+      <text>{{item.info}}</text>
+      <wux-circle size="20" strokeWidth="2" backgroundColor="#ffffff" color="{{item.color}}" percent="{{item.value * 10}}">{{item.value}}</wux-circle>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class='hero-intro'>
+  <view class='title'>国服数据<text>当前版本 V{{version}}</text></view>
+  <view class='lpl-detail'>
+    <view class='detail-item'>
+      <view class='top'>{{mainLane.placeName}}{{mainLane.lanrate_tag}}</view>
+      <view class='bottom'>主要位置</view>
+    </view>
+    <view class='detail-item'>
+      <view class='top'>{{mainLane.lanewinrate_tag}}</view>
+      <view class='bottom'>国服胜率</view>
+    </view>
+    <view class='detail-item'>
+      <view class='top'>{{mainLane.lanshowrate_tag}}</view>
+      <view class='bottom'>登场率</view>
+    </view>
+    <view class='detail-item'>
+      <view class='top'>{{mainLane.hold1}}th</view>
+      <view class='bottom'>登场排名</view>
+    </view>
+  </view>
+</view>
+
+<view class='hero-intro'>
+  <view class='title'>技能介绍</view>
+  <view class='spells'>
+    <view class='spell-item {{index === curIndex? "active":""}}' wx:for="{{heroSpells}}" wx:key>
+      <image src='{{item.abilityIconPath}}' data-index='{{index}}' bindtap='switchSpell'></image>
+    </view>
+  </view>
+  <view class='spell-intro'>
+    <view class='name'>{{pipe.spells(curIndex)}}--{{heroSpells[curIndex].name}}</view>
+    <view class='intro'>{{heroSpells[curIndex].description}}</view>
+  </view>
+</view>
+
+<view class='hero-intro'>
+  <view class='title'>对局技巧</view>
+  <view class='fight-tips'>
+    <view class='tip-title'>当你使用{{heroTitle}}时</view>
+    <view class='content' wx:for="{{allyTip}}" wx:key>{{item}}</view>
+    <view class='tip-title'>敌人使用{{heroTitle}}时</view>
+    <view class='content' wx:for="{{enemyTip}}" wx:key wx:if="{{item}}">-{{item}}</view>
+  </view>
+</view> 
+
+<view class='hero-intro'>
+  <view class='title'>英雄简介</view>
+  <view class='introduction'>
+    {{heroIntro}}
+  </view>
+</view> 

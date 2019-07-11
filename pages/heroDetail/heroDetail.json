@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-circle": "../../dist/circle/index"
+  }
 }

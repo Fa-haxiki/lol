@@ -1,1 +1,148 @@
 /* pages/heroDetail/heroDetail.wxss */
+page {
+  background: #eee;
+}
+.swiper {
+  width: 100%;
+  height: 380rpx;
+}
+.back-img {
+  width: 100%;
+}
+
+.hero-detail{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 35rpx 20rpx;
+  margin-top: 60rpx;
+}
+
+.hero-detail .role {
+  font-size: 26rpx;
+  margin-top: 30rpx;
+}
+
+.hero-detail .info {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero-detail .info .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10rpx;
+}
+.hero-detail .info .info-item text {
+  margin-right: 6rpx;
+  margin-top: -8rpx;
+}
+
+.hero-intro {
+  padding: 40rpx 0;
+  background: white;
+  margin-top: 20rpx;
+}
+
+.hero-intro .title {
+  border-left: 8rpx solid #ba9a6c;
+  padding-left: 32rpx;
+  padding-right: 40rpx;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-intro .title text {
+  font-size: 20rpx;
+  color: #ba9a6c;
+}
+
+.spell-intro {
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+}
+
+.spell-intro .name {
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.spell-intro .intro {
+  color: #312f2f;
+  font-size: 28rpx;
+}
+
+.spells{
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+}
+
+.spells .spell-item {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+
+.spells .spell-item.active {
+  border: 6rpx solid #ba9a6c;
+}
+
+.spells .spell-item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.lpl-detail{
+  margin: 40rpx 40rpx 0 40rpx;
+  display: flex;
+  align-items: center;
+}
+.lpl-detail .detail-item {
+  width: 25%;
+  border-right: 2rpx solid #ba9a6c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lpl-detail .detail-item:last-child {
+  border-right: unset;
+}
+.lpl-detail .detail-item .top {
+  font-size: 26rpx;
+  color: #ba9a6c;
+}
+.lpl-detail .detail-item .bottom {
+  font-size: 30rpx;
+}
+
+.introduction {
+  padding: 30rpx 40rpx 0 40rpx;
+  font-size: 28rpx;
+  color: #312f2f;
+}
+
+.fight-tips{
+  padding: 20rpx 40rpx 0 40rpx;
+}
+
+.fight-tips .tip-title {
+  color: #338c7a;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.fight-tips .content {
+  font-size: 28rpx;
+  color: #312f2f;
+  margin-top: 10rpx;
+}
