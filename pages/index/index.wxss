@@ -20,7 +20,6 @@ page {
 
 .lol-hero-item .head {
   width: 223rpx;
-  height: 223rpx;
 }
 
 .lol-hero-item .info {

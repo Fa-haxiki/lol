@@ -60,7 +60,7 @@
   </view>
 </view>
 
-<view class='hero-intro'>
+<!-- <view class='hero-intro'>
   <view class='title'>对局技巧</view>
   <view class='fight-tips'>
     <view class='tip-title'>当你使用{{heroTitle}}时</view>
@@ -68,7 +68,7 @@
     <view class='tip-title'>敌人使用{{heroTitle}}时</view>
     <view class='content' wx:for="{{enemyTip}}" wx:key wx:if="{{item}}">-{{item}}</view>
   </view>
-</view> 
+</view>  -->
 
 <view class='hero-intro'>
   <view class='title'>英雄简介</view>

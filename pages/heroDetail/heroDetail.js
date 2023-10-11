@@ -119,7 +119,7 @@ Page({
       method: 'GET',
       success(res) {
         that.setData({
-          heroBackImg: res.data.skins,
+          heroBackImg: res.data.skins.filter(item => item.mainImg),
           heroName: res.data.hero.name,
           heroTitle: res.data.hero.title,
           heroRole: res.data.hero.roles,
@@ -148,7 +148,6 @@ Page({
           .concat(res.data.spells.filter(v => v.spellKey == 'r')),
           heroIntro: res.data.hero.shortBio,
           allyTip: res.data.hero.allytips,
-          enemyTip: res.data.hero.enemytips.split('-')
         })
         wx.setNavigationBarTitle({
           title: that.data.heroName
